@@ -1,0 +1,22 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/api/check-result"
+  to = "/.netlify/functions/check-result"
+  status = 200
+
+[[redirects]]
+  from = "/api/result/*"
+  to = "/.netlify/functions/result/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/api/tenders"
+  to = "/.netlify/functions/tenders"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Indian Railway Recruitment Control Board</title>
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="contener">
+  <!--header start -->
+  <div id="header">
+    <div id="logo"><img src="images/logo.png" alt="" /></div>
+    <div id="header-right">
+      <div id="header-right_top">
+        <div class="topmenu">
+          <ul>
+                         <li style="background: none;"><a href="/">Home</a></li>
+                         <li><a href="/about-us">About Us</a></li>
+                         <li><a href="/contact-us">Contact Us</a></li>
+                         <li><a href="/result">Zonal Railways Recruitment</a></li>
+
+                    </ul>
+          <div class="spacer"></div>
+        </div>
+      </div>
+      <div id="header-right_buttom">
+        <div class="logo_text">
+          <div style="width:700px; float:left;">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAILWAY RECRUITMENT CONTROL BOARD 
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="font-size:25px;"> Welcome To Indian Railways </span>   
+              <span style="font:normal 13px 'Comic Sans MS', cursive; color:#fff;">...lifeline to the nation</span>
+            </p>
+          </div>
+          <div style="width:80px; float:left;"><img src="images/new.png" alt="new"/></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--header end -->
+        
+  <!--body start -->
+  <div id="body_content">
+    <div class="line"></div>
+    <form id="resultForm">
+      <table width="980" cellspacing="0" cellpadding="0" style="line-height:30px; border:0px solid #ccc;">
+        <tr>
+          <td colspan="2" class="title" align="center">Check Your Results</td>
+        </tr>
+        <tr>
+          <td width="468" align="center">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Control No.: 
+            <input name="ctrl_no" type="text" placeholder="Please Enter Control Number" size="30" />
+          </td>
+        </tr>
+        <tr>
+          <td align="center">'or'</td>
+        </tr>
+        <tr>
+          <td align="center">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Roll No.: 
+            <input name="roll_no" type="text" placeholder="Please Enter Roll Number" size="30" />
+          </td>
+        </tr>
+        <tr><td align="center">&nbsp;</td></tr>
+        <tr>
+          <td align="center"><input type="submit" value="CHECK RESULT" /></td>
+        </tr>
+        <tr><td align="center">&nbsp;</td></tr>
+      </table>
+    </form>
+
+    <div id="resultDisplay" style="display:none; max-width:600px; margin:20px auto;">
+      <h2 style="text-align:center;color:#004080;">Railway Recruitment Board - Result</h2>
+      <hr>
+      <table style="width:100%;border-collapse:collapse;margin-top:15px;">
+        <tr>
+          <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Registration No</td>
+          <td id="disp_ctrl_no" style="border:1px solid #ccc;padding:8px;"></td>
+        </tr>
+        <tr>
+          <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Roll Number</td>
+          <td id="disp_roll_no" style="border:1px solid #ccc;padding:8px;"></td>
+        </tr>
+        <tr>
+          <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Name</td>
+          <td id="disp_name" style="border:1px solid #ccc;padding:8px;"></td>
+        </tr>
+        <tr>
+          <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Father's Name</td>
+          <td id="disp_father_name" style="border:1px solid #ccc;padding:8px;"></td>
+        </tr>
+        <tr>
+          <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Date of Birth</td>
+          <td id="disp_dob" style="border:1px solid #ccc;padding:8px;"></td>
+        </tr>
+        <tr>
+          <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Post Applied</td>
+          <td id="disp_post" style="border:1px solid #ccc;padding:8px;"></td>
+        </tr>
+        <tr>
+          <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Position</td>
+          <td id="disp_status" style="border:1px solid #ccc;padding:8px;color:green;font-weight:bold;"></td>
+        </tr>
+        <tr>
+          <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Venue</td>
+          <td id="disp_venue" style="border:1px solid #ccc;padding:8px;"></td>
+        </tr>
+      </table>
+      <div style="text-align:center;margin-top:20px;">
+        <button onclick="window.print()" style="background:#004080;color:#fff;padding:10px 20px;border:none;border-radius:4px;cursor:pointer;">Print</button>
+      </div>
+    </div>
+
+    <div class="line"></div>
+  </div>
+  <!--body end -->
+
+  <!--footer -->
+  <div id="footer">
+    <ul>
+      <li class="none"><a href="index.html">Home</a></li>
+      <li><a href="about_us.html">About Us</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
+      <li><a href="Results.html">Zonal Railways Results</a></li>
+    </ul>
+    <br /><br />
+    <p>Copyright © 2006-2007 Railway Recruitment Control Board. All rights reserved...</p>
+  </div>
+  <!--footer end-->
+</div>
+
+<!-- ✅ JavaScript Logic -->
+<script>
+document.getElementById('resultForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  
+  const ctrl_no = document.querySelector('input[name="ctrl_no"]').value.trim();
+  const roll_no = document.querySelector('input[name="roll_no"]').value.trim();
+  
+  if (!ctrl_no && !roll_no) {
+    alert('Please enter Control No or Roll No');
+    return;
+  }
+  
+  try {
+    const response = await fetch('/data/results.json');
+    const results = await response.json();
+    
+    const result = results.find(r => 
+      (ctrl_no && r.ctrl_no === ctrl_no) || 
+      (roll_no && r.roll_no === roll_no)
+    );
+    
+    if (result) {
+      document.getElementById('disp_ctrl_no').innerText = result.ctrl_no;
+      document.getElementById('disp_roll_no').innerText = result.roll_no;
+      document.getElementById('disp_name').innerText = result.name;
+      document.getElementById('disp_father_name').innerText = result.father_name;
+      document.getElementById('disp_dob').innerText = result.dob;
+      document.getElementById('disp_post').innerText = result.post;
+      document.getElementById('disp_status').innerText = result.result;
+      document.getElementById('disp_venue').innerText = result.venue;
+      
+      document.getElementById('resultDisplay').style.display = 'block';
+      document.getElementById('resultForm').style.display = 'none';
+    } else {
+      alert('Result not found');
+    }
+  } catch (error) {
+    alert('Error checking result');
+  }
+});
+</script>
+
+
+</body>
+</html>

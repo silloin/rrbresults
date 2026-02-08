@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Indian Railway Recruitment Control Board</title>
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="contener">
+  <!--header start -->
+  <div id="header">
+    <div id="logo"><img src="images/logo.png" alt="" /></div>
+    <div id="header-right">
+      <div id="header-right_top">
+        <div class="topmenu">
+          <ul>
+                         <li style="background: none;"><a href="/">Home</a></li>
+                         <li><a href="/about-us">About Us</a></li>
+                         <li><a href="/contact-us">Contact Us</a></li>
+                         <li><a href="/result">Zonal Railways Recruitment</a></li>
+
+                    </ul>
+          <div class="spacer"></div>
+        </div>
+      </div>
+      <div id="header-right_buttom">
+        <div class="logo_text">
+          <div style="width:700px; float:left;">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAILWAY RECRUITMENT CONTROL BOARD 
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="font-size:25px;"> Welcome To Indian Railways </span>   
+              <span style="font:normal 13px 'Comic Sans MS', cursive; color:#fff;">...lifeline to the nation</span>
+            </p>
+          </div>
+          <div style="width:80px; float:left;"><img src="images/new.png" alt="new"/></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--header end -->
+  <main>
+  
+</main>
+<div style="max-width:600px;margin:20px auto;font-family:Arial,sans-serif;">
+  <h2 style="text-align:center;color:#004080;">Railway Recruitment Board</h2>
+  <hr>
+  <h2 style="text-align:center;color:#004080;">Result</h2>
+  <hr>
+  
+  <table style="width:100%;border-collapse:collapse;margin-top:15px;">
+  <tr>
+    <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Registration No</td>
+    <td id="disp_ctrl_no" style="border:1px solid #ccc;padding:8px;"></td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Roll Number</td>
+    <td id="disp_roll_no" style="border:1px solid #ccc;padding:8px;"></td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Name</td>
+    <td id="disp_name" style="border:1px solid #ccc;padding:8px;"></td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Father's Name</td>
+    <td id="disp_father_name" style="border:1px solid #ccc;padding:8px;"></td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Date of Birth</td>
+    <td id="disp_dob" style="border:1px solid #ccc;padding:8px;"></td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Post Applied</td>
+    <td id="disp_post" style="border:1px solid #ccc;padding:8px;"></td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Position</td>
+    <td id="disp_status" style="border:1px solid #ccc;padding:8px;color:green;font-weight:bold;"></td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ccc;padding:8px;font-weight:bold;">Venue</td>
+    <td id="disp_venue" style="border:1px solid #ccc;padding:8px;"></td>
+  </tr>
+</table>
+
+  
+  <div style="text-align:center;margin-top:20px;">
+    <button onclick="window.print()" style="background:#004080;color:#fff;padding:10px 20px;border:none;border-radius:4px;cursor:pointer;">
+      Print
+    </button>
+  </div>
+  
+  <div style="text-align:center;margin-top:20px;font-size:14px;">
+    <a href="index.html">Home</a> | 
+    <a href="about.html">About Us</a> | 
+    <a href="contact.html">Contact Us</a> | 
+    <a href="zonal.html">Zonal Railways Recruitment</a>
+  </div>
+  
+  <p style="text-align:center;font-size:12px;color:#666;margin-top:10px;">
+    Copyright © 2006-2007 Railway Recruitment Control Board. All rights reserved.
+  </p>
+</div>
+
+
+
+<script>
+  async function fetchResultData() {
+    const params = new URLSearchParams(window.location.search);
+    const roll_no = params.get('roll_no');
+
+    if (!roll_no) {
+      console.error("No roll_no found in URL");
+      return;
+    }
+
+    try {
+      const response = await fetch(`/api/result/${roll_no}`);
+      if (!response.ok) throw new Error('Network response was not ok');
+      const data = await response.json();
+
+      document.getElementById('disp_ctrl_no').innerText = data.ctrl_no || 'N/A';
+      document.getElementById('disp_roll_no').innerText = data.roll_no || 'N/A';
+      document.getElementById('disp_name').innerText = data.name || 'N/A';
+      document.getElementById('disp_father_name').innerText = data.father_name || 'N/A';
+      document.getElementById('disp_dob').innerText = data.dob || 'N/A';
+      document.getElementById('disp_post').innerText = data.post || 'N/A';
+      document.getElementById('disp_status').innerText = data.result || 'N/A';
+      document.getElementById('disp_venue').innerText = data.venue || 'N/A';
+    } catch (error) {
+      console.error('Fetch error:', error);
+      alert('Error fetching result data. Please try again later.');
+    }
+  }
+
+  window.onload = fetchResultData;
+</script>
+</body>
+</html>

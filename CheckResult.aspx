@@ -1,0 +1,119 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Indian Railway Recruitment Contral Board</title>
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="contener">
+        <!--header start -->
+ <div id="header">
+            <div id="logo"><img src="images/logo.png" alt="" /></div>
+            <div id="header-right">
+                <div id="header-right_top">
+                  <!--<div id="search">
+                        <div id="search_field"><input name="image" type="text" class="search_field"/></div>
+                  </div>-->
+                    <div class="topmenu">
+                    <ul>
+                         <li style="background: none;"><a href="/">Home</a></li>
+                         <li><a href="/about-us">About Us</a></li>
+                         <li><a href="/contact-us">Contact Us</a></li>
+                         <li><a href="/result">Zonal Railways Recruitment</a></li>
+
+                    </ul>
+                    <div class="spacer"></div>
+                    </div>
+          </div>
+                <div id="header-right_buttom">
+                  <div class="logo_text"><div style="width:700px; float:left;">  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAILWAY RECRUITMENT CONTROL BOARD 
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:25px;"> Welcome To Indian Railways </span>   
+                        <span style="font:normal 13px 'Comic Sans MS', cursive; color:#fff;">...lifeline to the nation</span>
+                        </p>
+                        </div>
+                    <div style="width:80px; float:left;"><img src="images/new.png"/></div>
+                  </div>
+                    
+                  </div>
+                 
+              </div>
+            </div>
+        </div>        <!--header end -->
+        
+        
+        <!--body start -->
+        <div id="body_content">
+            <div class="line"></div>
+            <table width="980" border="0px" bordercolor="#CCCCCC" cellspacing="0" cellpadding="0"style="line-height:30px; border:0px solid #ccc; ">
+<head id="Head1"><title>
+	Check Result
+</title>
+    <link type="text/css" rel="stylesheet" href="css/local.css"" />
+</head>
+<body style="background-color: #FFFFF">
+    <form name="form1" method="post" action="./CheckResult.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTEyMTc3MTQwNmRkElcrTG07patCdpnHrveXEVg9mB0zRWYCN6h+qixpIvY=" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B6D52677" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAARfbyISOmabBhrsf5OBHrQWTL1VrKdjXq18n5Pc/YSyZVgf7fF7Hz24SrWg8QUg/S8PixFK8Vl9fJPp8trIg+jJ5HdUg5souAQWekbZwzqllsyWTV+Hf8MyGEVjhg9bbwQ=" />
+</div>
+    <div align="center">
+    <div align="center"><h1>Check Your Results</h1></div>
+    <hr />
+    
+    <table width="80%">
+    <tr>
+    <td width="40%" colspan="2" style="text-align: center; width: 80%">&nbsp;</td>
+    </tr>
+    <tr>
+    <td width="40%" style="text-align: right">Registration No :</td><td width="40%"><input name="txtControlNo" type="text" id="txtControlNo" class="form-control" placeHolder="Please Enter Registration No" /> </td>
+    </tr>
+    <tr>
+    <td width="40%">&nbsp;</td><td width="40%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        &#39;or&#39;</td>
+    </tr>
+     <tr>
+    <td style="text-align: right">Roll No :</td><td><input name="txtRollNo" type="text" id="txtRollNo" class="form-control" placeHolder="Please Enter Roll No" /></td>
+    </tr>
+     <tr>
+    <td style="text-align: right">&nbsp;</td><td>&nbsp;</td>
+    </tr>
+     <tr>
+     <td></td>
+    <td  style="text-align: left"><input type="submit" name="btnChkResult" value="Check Result" id="btnChkResult" class="btn btn-default" style="width:180px;" /></td>
+    </tr>
+     <tr>
+    <td colspan="2" style="text-align: center"><span id="lblMsg" style="color:Red;"></span>&nbsp;</td>
+    </tr>
+    </table>
+    <hr />
+    </div>
+    </form>
+<!--footer -->
+            <div id="footer";>
+                <ul>
+                  <li class="none"><a href="index-2.html">Home</a></li>
+                  <li><a href="about_us.html">About Us</a></li>
+                  <li><a href="contact_us.html">Contact us</a></li>
+                  <li><a href="Results.html">Zonal Railways Recruitment</a></li>
+              </ul>
+                  <br />
+                  <br />
+                  <p>Copyright@ 2006-2007 Railway Recruitment Control Board All rights reserved... </p>
+   </div><!--footer end-->
+    </div>
+</body>
+
+
+
+</html> 

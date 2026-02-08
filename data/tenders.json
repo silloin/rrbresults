@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Tender Notice",
+    "description": "Tender for Office Supplies",
+    "link": "/download/NOTICE.html"
+  },
+  {
+    "id": 2,
+    "title": "Details",
+    "description": "Tender for IT Equipment",
+    "link": "/download/DETAILS.html"
+  }
+]
