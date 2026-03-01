@@ -60,33 +60,33 @@
     "result": "QUALIFIED"
   },
   {
-    "CTRL_NO": "4512094385",
-    "ROLL_NO": "255094119537249",
-    "NAME": "NIKHIL PRAKASH DEVADKAR",
-    "FATHER_NAME": "PRAKASH DEVADKAR",
-    "DOB": "02/04/2002",
-    "POST": "COMMERCIAL (CLERK)",
-    "VENUE": "NORTHERN RAILWAY, NEW DELHI",
-    "RESULT": "QUALIFIED"
-},
-  {
-    "CTRL_NO": "4593780495",
-    "ROLL_NO": "259974106093502",
-    "NAME": "VINIKET PRAKASH DEVADKAR",
-    "FATHER_NAME": "PRAKASH DEVADKAR",
-    "DOB": "13/04/2004",
-    "POST": "COMMERCIAL (CLERK)",
-    "VENUE": "NORTHERN RAILWAY, NEW DELHI",
-    "RESULT": "QUALIFIED"
+    "ctrl_no": "4512094385",
+    "roll_no": "255094119537249",
+    "name": "NIKHIL PRAKASH DEVADKAR",
+    "father_name": "PRAKASH DEVADKAR",
+    "dob": "02/04/2002",
+    "post": "COMMERCIAL (CLERK)",
+    "venue": "NORTHERN RAILWAY, NEW DELHI",
+    "result": "QUALIFIED"
   },
   {
-    "CTRL_NO": "4519782067",
-    "ROLL_NO": "255094106093809",
-    "NAME": "SUNIL MADHUKAR SHINTRE",
-    "FATHER_NAME": "MADHUKAR DATTU SHINTRE",
-    "DOB": "22/02/1996",
-    "POST": "COMMERCIAL (CLERK)",
-    "VENUE": "NORTHERN RAILWAY, NEW DELHI",
-    "RESULT": "QUALIFIED"
+    "ctrl_no": "4593780495",
+    "roll_no": "259974106093502",
+    "name": "VINIKET PRAKASH DEVADKAR",
+    "father_name": "PRAKASH DEVADKAR",
+    "dob": "13/04/2004",
+    "post": "COMMERCIAL (CLERK)",
+    "venue": "NORTHERN RAILWAY, NEW DELHI",
+    "result": "QUALIFIED"
+  },
+  {
+    "ctrl_no": "4519782067",
+    "roll_no": "255094106093809",
+    "name": "SUNIL MADHUKAR SHINTRE",
+    "father_name": "MADHUKAR DATTU SHINTRE",
+    "dob": "22/02/1996",
+    "post": "COMMERCIAL (CLERK)",
+    "venue": "NORTHERN RAILWAY, NEW DELHI",
+    "result": "QUALIFIED"
   }
 ]
